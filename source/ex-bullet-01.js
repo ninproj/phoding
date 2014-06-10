@@ -58,6 +58,7 @@ GameState.prototype.shootBullet = function() {
     // the amount of time since the last shot is more than
     // the required delay.
 
+    alert();
     if(bulletCount >= 10){
 
 
