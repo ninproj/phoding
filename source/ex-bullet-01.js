@@ -116,7 +116,27 @@ GameState.prototype.update = function() {
             return;
         }
         else{
+
+
+
             bulletCount = bulletCount+1;
+             switch(bulletCount){
+
+                case 3:
+                     this.BULLET_SPEED = 1000;
+                     
+                break;
+                 case 4:
+                     this.BULLET_SPEED = 1500;
+                break;
+
+                default:
+
+                    this.BULLET_SPEED = 500;
+                break;
+
+                
+            }
             countIt=false;
             setTimeout(function(){
                 countIt=true;
