@@ -113,6 +113,7 @@ GameState.prototype.update = function() {
 
             return;
         }
+        console.log("is down");
         else{
             bulletCount = bulletCount+1;
             countIt=false;
