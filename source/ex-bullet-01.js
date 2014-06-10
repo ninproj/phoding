@@ -110,9 +110,9 @@ GameState.prototype.update = function() {
             return;
         }
 
-        console.log("is down");
-        if(bulletCount>= 5){
 
+        if(bulletCount>= 5){
+            alert("Press the space bar to reload");
             return;
         }
         else{
