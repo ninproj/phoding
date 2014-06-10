@@ -177,7 +177,7 @@ function selectExample(n) {
                 var location = window.location.pathname +
                     window.location.search +
                     window.location.hash;
-                ga('send', 'pageview', location);
+               // ga('send', 'pageview', location);
             })
             .always(function() { $('#spinner').hide(); });
     }
