@@ -3,6 +3,7 @@
 
 
 var bulletCount = 0;
+var = true;
 
 var GameState = function(game) {
 };
@@ -103,14 +104,21 @@ GameState.prototype.update = function() {
 
     if (this.game.input.activePointer.isDown) {
 
+        if(countIt == false){
+            return;
+        }
         if(bulletCount>= 5){
 
             return;
         }
         else{
             bulletCount = bulletCount+1;
+            countIt=false;
+            setTimeout(function(){
+                countIt=true;
+            },500)
         }
-        
+
         this.shootBullet();
 
 
