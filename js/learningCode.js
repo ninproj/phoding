@@ -13,17 +13,35 @@ function generateBG(){
 }
 
 
+var toggle =true;
+
 function waitForHover(){
 
+	
+		$('#blah').on('mouseover', function(e){
 
-	$('#blah').on('mouseover', function(e){
-	$('#blah').html("Let's learn some code");
+			if(toggle === true){
+				$('#blah').html("Let's learn some code");
+				toggle=false;
+			}
+			else{
+				$('#blah').html("Phoding");
+				toggle=true;
+			}
 
-	})
-	$('#blah').on('mouseout', function(e){
-	$('#blah').html("Phoding: Phaser to Code Games");
+		})
 
-	})
+
+		$('#blah').on('mouseout', function(e){
+
+			$('#blah').html("Hello!");
+			
+
+		})
+	
+
+	
+
 }
 
 
