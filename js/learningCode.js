@@ -56,8 +56,8 @@ function waitForHover(){
            	 countIt=false;
             setTimeout(function(){
                 countIt=true;
-            },500)
-            
+            },1000)
+
             bulletCount =0;
             countIt=true;
             alert("reloaded!");
