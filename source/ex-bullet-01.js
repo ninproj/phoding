@@ -112,19 +112,21 @@ GameState.prototype.update = function() {
 
 
         if(bulletCount>= 5){
-            alert("Press the space bar to reload");
+           $('#blah').html("Press the space bar to reload");
             return;
         }
+
+        
         else{
 
-
+             $('#blah').html("Playing bullets. Custom code from tutorial.");
 
             bulletCount = bulletCount+1;
              switch(bulletCount){
 
                 case 3:
                      this.BULLET_SPEED = 1000;
-                     
+
                 break;
                  case 4:
                      this.BULLET_SPEED = 1500;
