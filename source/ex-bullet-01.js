@@ -58,14 +58,7 @@ GameState.prototype.shootBullet = function() {
     // the amount of time since the last shot is more than
     // the required delay.
 
-    alert();
-    if(bulletCount >= 10){
 
-
-        return;
-
-    }
-    bulletCount = bulletCount+1;
 
 
 
@@ -94,6 +87,14 @@ GameState.prototype.shootBullet = function() {
     bullet.reset(this.gun.x, this.gun.y);
 
     // Shoot it
+      alert();
+    if(bulletCount >= 10){
+
+
+        return;
+
+    }
+    bulletCount = bulletCount+1;
     bullet.body.velocity.x = this.BULLET_SPEED;
     bullet.body.velocity.y = 0;
 };
