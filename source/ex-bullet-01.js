@@ -58,12 +58,14 @@ GameState.prototype.shootBullet = function() {
     // the amount of time since the last shot is more than
     // the required delay.
 
-    if(bulletCount >= 5){
+    if(bulletCount >= 10){
 
 
         return;
+
     }
     bulletCount = bulletCount+1;
+
 
 
     if (this.lastBulletShotAt === undefined) this.lastBulletShotAt = 0;
@@ -78,7 +80,7 @@ GameState.prototype.shootBullet = function() {
 
     // Revive the bullet
     // This makes the bullet "alive"
-    bullet.revive();
+    
 
     // Bullets should kill themselves when they leave the world.
     // Phaser takes care of this for me by setting this flag
