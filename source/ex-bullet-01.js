@@ -109,11 +109,12 @@ GameState.prototype.update = function() {
         if(countIt == false){
             return;
         }
+
+        console.log("is down");
         if(bulletCount>= 5){
 
             return;
         }
-        console.log("is down");
         else{
             bulletCount = bulletCount+1;
             countIt=false;
