@@ -115,8 +115,8 @@ GameState.prototype.update = function() {
            $('#blah').html("Press the space bar to reload");
             return;
         }
+      
 
-        
         else{
 
              $('#blah').html("Playing bullets. Custom code from tutorial.");
@@ -146,7 +146,6 @@ GameState.prototype.update = function() {
         }
 
         this.shootBullet();
-
 
     }
 };

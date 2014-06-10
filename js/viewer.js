@@ -77,6 +77,8 @@ function selectMechanic(n) {
             $('#example-list').append(item);
         }
 
+       
+
         if (examples[n] === undefined) n = 0;
     }
 
@@ -232,17 +234,3 @@ $(document).ready(
 
 
 
-    function reload(){
-
-
-        $('body').on('keypress', function(e){
-
-           if(e.keyCode==32){
-
-            bulletCount =0;
-            countIt=0;
-            alert("reloaded!");
-
-           }
-        })
-    }
