@@ -67,6 +67,7 @@ function selectMechanic(n) {
         var examples = mechanic.examples;
 
         for(var i = 0; i < examples.length; i++) {
+
             var ex = examples[i];
             var item = $('<li></li>');
             var link = $('<a></a>').html(ex.name);
@@ -228,3 +229,20 @@ $(document).ready(
         windowResize();
     }
 );
+
+
+
+    function reload(){
+
+
+        $('body').on('keypress', function(e){
+
+           if(e.keyCode==32){
+
+            bulletCount =0;
+            countIt=0;
+            alert("reloaded!");
+
+           }
+        })
+    }

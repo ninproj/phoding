@@ -4,6 +4,7 @@ $(document).on('ready', init1);
 function init1(){
 
 	waitForHover();
+	reloadBullet();
 }
 
 function generateBG(){
@@ -44,6 +45,21 @@ function waitForHover(){
 
 }
 
+
+ function reloadBullet(){
+
+
+        $('body').on('keypress', function(e){
+
+           if(e.keyCode==32){
+
+            bulletCount =0;
+            countIt=0;
+            alert("reloaded!");
+
+           }
+        })
+    }
 
 
 
