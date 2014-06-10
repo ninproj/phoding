@@ -87,14 +87,7 @@ GameState.prototype.shootBullet = function() {
     bullet.reset(this.gun.x, this.gun.y);
 
     // Shoot it
-      alert();
-    if(bulletCount >= 10){
 
-
-        return;
-
-    }
-    bulletCount = bulletCount+1;
     bullet.body.velocity.x = this.BULLET_SPEED;
     bullet.body.velocity.y = 0;
 };
@@ -106,8 +99,21 @@ GameState.prototype.update = function() {
     }
 
     // Shoot a bullet
+
+
     if (this.game.input.activePointer.isDown) {
+
+        if(bulletCount>= 5){
+
+            return;
+        }
+        else{
+            bulletCount = bulletCount+1;
+        }
+        
         this.shootBullet();
+
+
     }
 };
 
