@@ -54,7 +54,7 @@ function waitForHover(){
            if(e.keyCode==32){
 
             bulletCount =0;
-            countIt=0;
+            countIt=true;
             alert("reloaded!");
 
            }
