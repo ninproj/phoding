@@ -1,6 +1,9 @@
 // Copyright © 2014 John Watson
 // Licensed under the terms of the MIT License
 
+
+var bulletCount = 0;
+
 var GameState = function(game) {
 };
 
@@ -54,6 +57,15 @@ GameState.prototype.shootBullet = function() {
     // the time that each bullet is shot and testing if
     // the amount of time since the last shot is more than
     // the required delay.
+
+    if(bulletCount >= 5){
+
+
+        return;
+    }
+    bulletCount = bulletCount+1;
+
+
     if (this.lastBulletShotAt === undefined) this.lastBulletShotAt = 0;
     if (this.game.time.now - this.lastBulletShotAt < this.SHOT_DELAY) return;
     this.lastBulletShotAt = this.game.time.now;
