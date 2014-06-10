@@ -3,7 +3,7 @@
 
 
 var bulletCount = 0;
-var = true;
+var countIt= true;
 
 var GameState = function(game) {
 };
