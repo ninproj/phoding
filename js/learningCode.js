@@ -53,6 +53,11 @@ function waitForHover(){
 
            if(e.keyCode==32){
 
+           	 countIt=false;
+            setTimeout(function(){
+                countIt=true;
+            },500)
+            
             bulletCount =0;
             countIt=true;
             alert("reloaded!");
