@@ -126,6 +126,8 @@ GameState.prototype.update = function() {
 
                 case 2:
                      this.BULLET_SPEED = 5000;
+                break;
+                
                 case 3:
                      this.BULLET_SPEED = 1000;
 
