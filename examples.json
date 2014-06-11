@@ -40,6 +40,12 @@
                 "name": "Variable jump height",
                 "webgl": false,
                 "description": "<p>Use the arrow keys or tap to move the player left and right. Press the up arrow or tap the center to jump and double jump (while in the air).</p><p>You can control the height of the jump by how long you hold down the jump button.</p>"
+            },
+            {
+                "script": "ex-walking-01.js",
+                "name": "Walking again",
+                "webgl": false,
+                "description": "<p>Use the arrow keys or tap to move the player left and right. Press the up arrow or tap the center to jump and double jump (while in the air).</p><p>You can control the height of the jump by how long you hold down the jump button.</p>"
             }
         ]
     },
