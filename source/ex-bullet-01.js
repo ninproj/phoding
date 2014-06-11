@@ -124,6 +124,8 @@ GameState.prototype.update = function() {
             bulletCount = bulletCount+1;
              switch(bulletCount){
 
+                case 2:
+                     this.BULLET_SPEED = 5000;
                 case 3:
                      this.BULLET_SPEED = 1000;
 
